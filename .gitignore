@@ -7,6 +7,10 @@
 !/jobs
 !/.gitignore
 !/*.xml
+.DS_Store
+.DS_Store/
+.git/
+.git
 
 #ignore all files in jobs subdirectories except for folders
 #note: git doesn't track folders, only file content
