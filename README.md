@@ -6,6 +6,8 @@ A Prometheus pull proxy written in go
 # Introduction
 Promproxy is a Prometheus pull proxy which you can install on a single or multiple bastion or jump hosts in order to pull eg. node_exporter in an nat`ed environment.
 
+No env-foo or automation, CI/CD needed. (Obviously you could use any of those)
+
 Because go needs to be compiled by architecture if you want to have access to the source code, you can use the instructions like follows.
 
 # Setup requirements
@@ -25,6 +27,8 @@ I highly suggest you use the systemd to control the Promproxy.
 ```
 cp -v ./promproxy.service /etc/systemd/system/
 ```
+
+If you are using a seperate machine to build your code, just seperate the requirements from building the code.
 
 # Building the code
 ```
