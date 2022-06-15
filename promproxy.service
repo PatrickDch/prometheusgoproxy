@@ -1,0 +1,15 @@
+[Unit]
+Description=promproxy
+After=network.target
+ConditionPathExists=/data/promproxy
+
+[Service]
+Type=simple
+
+Restart=on-failure
+RestartSec=10
+
+ExecStart=/usr/local/bin/promproxy
+
+[Install]
+WantedBy=multi-user.target
